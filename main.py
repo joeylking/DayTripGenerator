@@ -52,4 +52,4 @@ def daytrip_generator(destination, mode, restaurant, form):
         print("Great, let's make sure this is correct...")
         daytrip_generator(new_destination, new_mode, new_restaurant, new_form)
 
-# daytrip_generator(r_destination, r_mode, r_restaurant, r_form)
+daytrip_generator(r_destination, r_mode, r_restaurant, r_form)
