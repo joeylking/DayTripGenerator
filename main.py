@@ -5,26 +5,11 @@ restaurants = ["Olive Garden", "Chili's", "Chipotle", "McDonald's"]
 transportation_modes = ["car", "horse", "uber", "motorcycle"]
 entertainment_forms = ["watch a movie", "play mini golf", "go to the park", "go antiquing"]
 
-def random_destination(list):
-    destination = random.choice(list)
-    return destination
+r_destination = random.choice(destinations)
+r_restaurant = random.choice(restaurants)
+r_mode = random.choice(transportation_modes)
+r_form = random.choice(entertainment_forms)
 
-def random_restaurant(list):
-    restaurant = random.choice(list)
-    return restaurant
-
-def random_transportation(list):
-    mode = random.choice(list)
-    return mode
-
-def random_entertainment(list):
-    form = random.choice(list)
-    return form
-
-r_destination = random_destination(destinations)
-r_restaurant = random_restaurant(restaurants)
-r_mode = random_transportation(transportation_modes)
-r_form = random_entertainment(entertainment_forms)
 
 def change_choice(elem, list):
     list.remove(elem)
@@ -67,4 +52,4 @@ def daytrip_generator(destination, mode, restaurant, form):
         print("Great, let's make sure this is correct...")
         daytrip_generator(new_destination, new_mode, new_restaurant, new_form)
 
-daytrip_generator(r_destination, r_mode, r_restaurant, r_form)
+# daytrip_generator(r_destination, r_mode, r_restaurant, r_form)
