@@ -10,7 +10,6 @@ r_restaurant = random.choice(restaurants)
 r_mode = random.choice(transportation_modes)
 r_form = random.choice(entertainment_forms)
 
-
 def change_choice(elem, list):
     list.remove(elem)
     new_elem = random.choice(list)
